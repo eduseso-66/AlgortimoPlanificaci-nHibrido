@@ -25,7 +25,7 @@ El algoritmo unifica los siguientes paradigmas en una sola estructura de datos m
 
 ## Clonar el repositorio
 ```bash
-git clone https://github.com/tu-usuario/Hybrid-OS-Scheduler.git
+git clone https://github.com/eduseso-66/AlgortimoPlanificaci-nHibrido.git
 cd Algoritmo-Planificaci-nHibrido
 ```
 ## Instalar dependencias necesarias
@@ -47,6 +47,7 @@ python main.py
 ### 👥 Integrantes y participantes de la creación de este proyecto
 Alexander Martines Aguilar
 José Eduardo Pérez Córdova
+
 
 
 
