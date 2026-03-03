@@ -60,13 +60,14 @@ En Linux/MacOS
 ```bash
 source env/bin/activate
 ```
-Para desactivar el entorno virtual se usa el comando
+Para desactivar el entorno virtual se usa el comando:
 deactivate
 
 
 ### 👥 Integrantes y participantes de la creación de este proyecto
-Alexander Martines Aguilar
+Alexander Martines Aguilar y
 José Eduardo Pérez Córdova
+
 
 
 
