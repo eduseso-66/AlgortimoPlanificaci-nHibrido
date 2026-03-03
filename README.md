@@ -26,7 +26,7 @@ El algoritmo unifica los siguientes paradigmas en una sola estructura de datos m
 ## Clonar el repositorio
 ```bash
 git clone https://github.com/eduseso-66/AlgortimoPlanificaci-nHibrido.git
-cd Algoritmo-Planificaci-nHibrido
+cd AlgoritmoPlanificaci-nHibrido
 ```
 ## Instalar dependencias necesarias
 ```bash
@@ -43,10 +43,31 @@ python main.py
     [ ] Añadir visualización de Diagramas de Gantt en tiempo real.
 
     [x] Migración a C: Traducción de la lógica de punteros y estructuras a nivel de Kernel real.
+    
+### IMPORTANTE
+Es de crucial importancia mencionar que, para evitar problemas se recomienda crear un entorno virtual en Python para evitar fallas (si se presentan).
+```bash
+python -m venv env
+
+```
+Una vez creado, el entorno virtual debe activarse vía alguno de los siguientes comandos.
+
+En Windows:
+```bash
+env\Scripts\activate
+```
+En Linux/MacOS
+```bash
+source env/bin/activate
+```
+Para desactivar el entorno virtual se usa el comando
+deactivate
+
 
 ### 👥 Integrantes y participantes de la creación de este proyecto
 Alexander Martines Aguilar
 José Eduardo Pérez Córdova
+
 
 
 
