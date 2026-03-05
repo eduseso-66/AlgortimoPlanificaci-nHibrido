@@ -39,13 +39,6 @@ pip install -r requirements.txt
 ```bash
 python main.py
 ```
-### 🛠️ Próximos Pasos (Roadmap)
-
-    [ ] Implementar gestión de estados de Bloqueo (I/O Wait).
-
-    [ ] Añadir visualización de Diagramas de Gantt en tiempo real.
-
-    [x] Migración a C: Traducción de la lógica de punteros y estructuras a nivel de Kernel real.
     
 ### IMPORTANTE
 Es de crucial importancia mencionar que, para evitar problemas se recomienda crear un entorno virtual en Python para evitar fallas (si se presentan).
@@ -73,6 +66,7 @@ José Eduardo Pérez Córdova
 
 
 ![animation](https://media.tenor.com/USfkXRl1-a0AAAAi/ratzombien.gif)
+
 
 
 
