@@ -61,7 +61,7 @@ pip install -r requirements.txt
 python main.py
 ```
 # Recomendacion
-Es de crucial importancia mencionar que, para evitar problemas se recomienda crear un entorno virtual en Python para evitar fallas (si se presentan).
+Es de crucial importancia mencionar que, para evitar problemas recomendamos crear un entorno virtual en Python para evitar fallas (si se presentan).
 ```
 python -m venv env
 ```
@@ -85,6 +85,7 @@ deactivate
 
 
 ![animation](https://media.tenor.com/USfkXRl1-a0AAAAj/ratzombien.gif)
+
 
 
 
