@@ -47,7 +47,7 @@ El sistema unifica los siguientes paradigmas en una estructura de datos modular 
 
 # 🚀 Metodo de instalacion y uso
 
-### 1. Clonar el tesoro
+### 1. Clonar el repositorio
 ```
 git clone https://github.com/eduseso-66/AlgortimoPlanificaci-nHibrido.git
 cd AlgoritmoPlanificaci-nHibrido
@@ -82,6 +82,7 @@ deactivate
 Alexander Martines Aguilar y José Eduardo Pérez Córdova
 
 ![animation](https://media.tenor.com/USfkXRl1-a0AAAAj/ratzombien.gif)
+
 
 
 
