@@ -1,72 +1,87 @@
-# 📁 Algoritmo de Planificación de Procesos : RT + Fair-Share + UNIX
+<h1 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&pause=1000&color=F72929&center=true&vCenter=true&width=800&height=70&lines=Algoritmo+Planificador+de+Procesos+H%C3%ADbrido;RT+%2B+Fair-Share+%2B+UNIX+%2B+RR;Kernel+Jer%C3%A1rquico+Simulado">
+</h1>
 
-En este repositorio se aplican 3 diferentes tipos de algoritmos de planificacion, además se incluye un simulador en terminal para probar cada uno de ellos, además se implemento un algoritmo hibrido que implementa todos juntos simuladon procesos y funcionalidades como paginación.
-Este proyecto implementa un Planificador de Procesos Híbrido de última generación. 
-No es solo un algoritmo aislado; es un Kernel jerárquico que integra cuatro lógicas de planificación que conviven en sistemas operativos modernos como Linux y Windows.
+<div align="center">
+  <img src="https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Python-3.x-yellow?style=for-the-badge&logo=python" />
+  <img src="https://img.shields.io/badge/OS-Linux%20%2F%20Windows-white?style=for-the-badge&logo=linux" />
+  <img src="https://img.shields.io/badge/Status-In%20Development-orange?style=for-the-badge" />
+</div>
+
+<br>
+
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJueXF4Znd4Znd4Znd4Znd4Znd4Znd4Znd4Znd4Znd4Znd4Znd4JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKSjPqcKInwLcmk/giphy.gif" width="400">
+</p>
+
+# PROYECTO
+Este repositorio implementa un **Planificador de Procesos Híbrido de última generación**. No es solo un algoritmo aislado; es un Kernel jerárquico que integra cuatro lógicas de planificación que conviven en sistemas operativos modernos.
+
+> [!IMPORTANT]
+> **Proyecto Escolar:** Creado para simular la gestión de recursos de CPU. Incluye documentación detallada en formato `.docx` dentro del repositorio.
 
 
 
-## PROYECTO ESCOLAR 
-Proyecto escolar creado con la finalidad de simular algoritmos de planificación de proceso, se adjuntara un archivo docx incluyendo la documentación completa de la creación de este proyecto. El proyecto fue construido solo en python, pero se espera una futura implementacion en lenguaje C.
-Evidentemente este proyecto incluye algunos fallos que serán corregidos en un futuro, así como también se aceptan sugerencias de mejora a este pequeño proyecto escolar.
+# 🧠 Arquitectura del Algoritmo
+El sistema unifica los siguientes paradigmas en una estructura de datos modular de 4 capas:
+
+| Capa | Algoritmo | Propósito |
+| :--- | :--- | :--- |
+| **Capa 0** | **Hard Real-Time (RT)** | Prioridad absoluta para procesos críticos (Sensores, Emergencias). |
+| **Capa 1** | **Fair-Share** | Distribución equitativa por grupos de usuarios. |
+| **Capa 2** | **UNIX Feedback** | Uso de valores *Nice* y penalizaciones dinámicas. |
+| **Capa 3** | **Round Robin (RR)** | Gestión de ráfagas de tiempo (Quantums) para interactividad. |
 
 
 
-#  Características del algoritmo
+# 🛠️ Tecnologías Utilizadas
+<div align="left">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white" />
+  <img src="https://img.shields.io/badge/Shell_Script-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+</div>
 
-El algoritmo unifica los siguientes paradigmas en una sola estructura de datos modular:
 
-    Capa 0: Hard Real-Time (RT) - Prioridad absoluta para procesos críticos (Sensores, Emergencias).
 
-    Capa 1: Fair-Share Scheduling - Distribución equitativa de CPU basada en grupos de usuarios, evitando la monopolización de recursos.
+# 🚀 Metodo de instalacion y uso
 
-    Capa 2: UNIX Traditional (Feedback) - Uso de valores Nice y penalizaciones dinámicas para procesos intensivos en CPU.
-
-    Capa 3: Round Robin (RR) - Gestión de ráfagas de tiempo (Quantums) para interactividad.
-
-# Como usarlo e instalarlo
-
-## Clonar el repositorio
-```bash
+### 1. Clonar el tesoro
+```
 git clone https://github.com/eduseso-66/AlgortimoPlanificaci-nHibrido.git
 cd AlgoritmoPlanificaci-nHibrido
 ```
-## Instalar dependencias necesarias
-```bash
+### 2. Instalar las dependencias necesarias
+```
 pip install -r requirements.txt
 ```
-## Ejecutar el simulador
-```bash
+### 3. Iniciar el simulador
+```
 python main.py
 ```
-    
-### IMPORTANTE
+# Recomendacion
 Es de crucial importancia mencionar que, para evitar problemas se recomienda crear un entorno virtual en Python para evitar fallas (si se presentan).
-```bash
-python -m venv env
-
 ```
-Una vez creado, el entorno virtual debe activarse vía alguno de los siguientes comandos.
-
+python -m venv env
+```
+Una vez creado el entorno virtual debe activarse usando los siguientes comandos.
 En Windows:
-```bash
+```
 env\Scripts\activate
 ```
-En Linux/MacOS
-```bash
+En MacOS/Linux:
+```
 source env/bin/activate
 ```
-Para desactivar el entorno virtual se usa el comando:
+Para desactivar el entorno virtual se usa el siguiente comando:
+```
 deactivate
+```
+# 👥 Integrantes y participantes de la creación de este proyecto
+Alexander Martines Aguilar y José Eduardo Pérez Córdova
 
-
-### 👥 Integrantes y participantes de la creación de este proyecto
-Alexander Martines Aguilar y
-José Eduardo Pérez Córdova
-
-
-![animation](https://media.tenor.com/USfkXRl1-a0AAAAi/ratzombien.gif)
-
+![animation](https://media.tenor.com/USfkXRl1-a0AAAAj/ratzombien.gif)
 
 
 
