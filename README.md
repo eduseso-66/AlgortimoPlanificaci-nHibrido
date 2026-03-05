@@ -78,10 +78,14 @@ Para desactivar el entorno virtual se usa el siguiente comando:
 ```
 deactivate
 ```
-# 👥 Integrantes y participantes de la creación de este proyecto
-Alexander Martines Aguilar y José Eduardo Pérez Córdova
+## Integrantes y participantes de la creación de este proyecto
+<h2 align = "center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=30&pause=1000&color=27F7E3&center=true&vCenter=true&width=800&height=80&lines=Jos&eacute+Eduardo+Perez+Cordova;Alexander+Martines+Aguilar">
+</h2>
+
 
 ![animation](https://media.tenor.com/USfkXRl1-a0AAAAj/ratzombien.gif)
+
 
 
 
