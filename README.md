@@ -1,9 +1,12 @@
 # 📁 Algoritmo de Planificación de Procesos : RT + Fair-Share + UNIX
 
+En este repositorio se aplican 3 diferentes tipos de algoritmos de planificacion, además se incluye un simulador en terminal para probar cada uno de ellos, además se implemento un algoritmo hibrido que implementa todos juntos simuladon procesos y funcionalidades como paginación.
 Este proyecto implementa un Planificador de Procesos Híbrido de última generación. 
 No es solo un algoritmo aislado; es un Kernel jerárquico que integra cuatro lógicas de planificación que conviven en sistemas operativos modernos como Linux y Windows.
 
-## PROYECTO ESCOLAR ⚠️
+
+
+## PROYECTO ESCOLAR 
 Proyecto escolar creado con la finalidad de simular algoritmos de planificación de proceso, se adjuntara un archivo docx incluyendo la documentación completa de la creación de este proyecto. El proyecto fue construido solo en python, pero se espera una futura implementacion en lenguaje C.
 Evidentemente este proyecto incluye algunos fallos que serán corregidos en un futuro, así como también se aceptan sugerencias de mejora a este pequeño proyecto escolar.
 
@@ -67,6 +70,10 @@ deactivate
 ### 👥 Integrantes y participantes de la creación de este proyecto
 Alexander Martines Aguilar y
 José Eduardo Pérez Córdova
+
+
+![animation](https://media.tenor.com/USfkXRl1-a0AAAAi/ratzombien.gif)
+
 
 
 
