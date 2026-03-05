@@ -12,7 +12,7 @@ Evidentemente este proyecto incluye algunos fallos que serán corregidos en un f
 
 
 
-# 🚀 Características Principales
+#  Características del algoritmo
 
 El algoritmo unifica los siguientes paradigmas en una sola estructura de datos modular:
 
@@ -24,7 +24,7 @@ El algoritmo unifica los siguientes paradigmas en una sola estructura de datos m
 
     Capa 3: Round Robin (RR) - Gestión de ráfagas de tiempo (Quantums) para interactividad.
 
-# 💻 Instalación y Uso
+# Como usarlo e instalarlo
 
 ## Clonar el repositorio
 ```bash
@@ -66,6 +66,7 @@ José Eduardo Pérez Córdova
 
 
 ![animation](https://media.tenor.com/USfkXRl1-a0AAAAi/ratzombien.gif)
+
 
 
 
