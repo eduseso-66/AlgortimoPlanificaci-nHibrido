@@ -44,8 +44,122 @@ El sistema unifica los siguientes paradigmas en una estructura de datos modular 
 </div>
 
 
+### Diagrama de Flujo de Datos
+
+```mermaid
+flowchart TB
+    subgraph Entrada["📝 Entrada de Usuario"]
+        A[Procesos Personalizados<br/>o Escenarios Demo]
+    end
+
+    subgraph Kernel["⚙️ Kernel - Orquestador Híbrido"]
+        B[Cola de Procesos RT<br/>priority < 10]
+        C[Grupos de Usuarios<br/>Fair-Share]
+        D[Scheduler UNIX<br/>Prioridad Dinámica]
+    end
+
+    subgraph Schedulers["🔧 Schedulers Especializados"]
+        E[RealTimeScheduler<br/>get_next]
+        F[FairShareScheduler<br/>select_user_group]
+        G[UnixScheduler<br/>sort_by_unix_priority]
+    end
+
+    subgraph Ejecucion["▶️ Ejecución"]
+        H[Dispatcher<br/>context_switch]
+        I[CPU Simulation<br/>tick]
+    end
+
+    subgraph Salida["📊 Salida"]
+        J[Métricas Finales<br/>Waiting / Turnaround]
+    end
+
+    A -->|add_process| B
+    A -->|add_process| C
+    
+    B -->|RT primero| E
+    C -->|Usuario con menor vruntime| F
+    F -->|Procesos del usuario| D
+    D -->|Ordenar por prioridad UNIX| G
+    
+    E -->|next_p| H
+    G -->|chosen| H
+    
+    H -->|Ejecutar| I
+    I -->|tick| I
+    I -->|Terminado| J
+    I -->|Pendientes| B
+    I -->|Pendientes| C
+```
+
+### Diagrama de Clases
+
+```mermaid
+classDiagram
+    class Process {
+        +str pid
+        +str name
+        +str status
+        +int burst_time
+        +int remaining_time
+        +int priority
+        +str user_id
+        +float vruntime
+        +int nice
+        +int completion_time
+        +update_vruntime(delta, weight)
+    }
+
+    class Kernel {
+        +list rt_queue
+        +dict user_groups
+        +Process running_process
+        +int clock
+        +add_process(process)
+        +select_next_process()
+        +tick()
+    }
+
+    class Dispatcher {
+        +Kernel kernel
+        +int total_execution_time
+        +context_switch(new_process)
+        +run_step()
+    }
+
+    class RealTimeScheduler {
+        +get_next(queue)$
+    }
+
+    class FairShareScheduler {
+        +select_user_group(user_groups)$
+    }
+
+    class UnixScheduler {
+        +adjust_priority(process)$
+        +sort_by_unix_priority(process_list)$
+    }
+
+    class Metrics {
+        +calculate_metrics(process_list)$
+    }
+
+    Kernel --> Process : manages
+    Dispatcher --> Kernel : controls
+    Kernel --> RealTimeScheduler : uses
+    Kernel --> FairShareScheduler : uses
+    Kernel --> UnixScheduler : uses
+    Metrics --> Process : analyzes
+```
+
+
+
 
 # 🚀 Metodo de instalacion y uso
+
+## Prerrequisitos
+- Python 3.10 o superior
+- pip (gestor de paquetes de Python)
+- Git (opcional, para clonar el repositorio)
 
 ### 1. Clonar el repositorio
 ```
@@ -83,8 +197,30 @@ deactivate
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=30&pause=1000&color=27F7E3&center=true&vCenter=true&width=800&height=80&lines=Jos&eacute+Eduardo+Perez+Cordova;Alexander+Martines+Aguilar">
 </h2>
 
+## 👨‍💻 Autores
+
+**eduseso-66**
+
+- GitHub: [@eduseso-66](https://github.com/eduseso-66)
+- Repositorio: [AlgortimoPlanificaci-nHibrido](https://github.com/eduseso-66/AlgortimoPlanificaci-nHibrido.git)
+
+
+
+## 🙏 Agradecimientos
+
+- Inspirado en los algoritmos de planificación de Linux (CFS) y UNIX
+- Documentación de [SimPy](https://simpy.readthedocs.io/) para simulación de eventos
+- Comunidad de Python por las herramientas y librerías
+
+
+
+<p align="center">
+  <b>⭐ ¡Si este proyecto te fue útil, dale una estrella! ⭐</b>
+</p>
+
 
 ![animation](https://media.tenor.com/USfkXRl1-a0AAAAj/ratzombien.gif)
+
 
 
 
